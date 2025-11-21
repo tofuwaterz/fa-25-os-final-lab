@@ -1,0 +1,99 @@
+The code at the following link  Download code at the following linkis meant to do the following:
+
+1. The parent thread creates a child thread that calls function sum, passing an integer as a parameter, and waits for the child thread to complete.
+************************************************************************************************************
+
+2. The child thread computes the sum of a sequence of 100 integers starting from the provided integer .  For example, if the argument is 20, then the program will compute 20 + 21 + 23....+120, print the result, and exit.
+
+Unfortunately, the code provided contains multiple flaws. Please identify the flaws, describe them below, fix the code, and upload below the fixed version.
+
+*** LINK ***
+
+https://csufullerton.instructure.com/courses/3545876/files/268250312?wrap=1
+
+*** CODE ***
+************************************************************************************************************
+#include <pthread.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+/**
+* Sums the first 100 numbers from the provided number
+* @param arg - the argument
+*/
+void* sum(void* arg)
+{
+// Typecast the pointer
+int number = (int*)arg;
+// The sum
+int sum = 0;
+// Compute the sum
+for(int num = number; num < number + 100; ++num)
+{
+sum += num;
+}
+fprintf(stderr, "Sum = %d\n");
+}
+int main()
+{
+// An arbitrary number to start from
+int startNum = 10;
+// Create a thread
+if(pthread_create(&id, NULL, sum, startNum) < 0)
+{
+perror("pthread_create");
+exit(1);
+}
+return 0;
+}
+************************************************************************************************************
+
+Suppose in a multithreaded process a thread makes a blocking system call. In which threading model(s) will this certainly result in a process blocking?
+
+************************************************************************************************************
+Consider a multi-threaded process with 10 threads. Thread 3 invokes an execlp() system call. Describe what will happen to each of the threads.
+
+************************************************************************************************************
+
+Explain the difference between internal and external fragmentation (in regards to the main memory).
+
+Consider a fixed-partition memory allocation scheme consisting of 10 partitions with each partition being 400 KB in size.  The first partition is occupied by a 100 KB process. The third is occupied by a 50 KB process. The ninth partition is occupied by a 26 KB process.  The rest of the partitions are free. How many KBs are lost due to internal fragmentation?
+
+************************************************************************************************************
+What is a page fault?
+
+************************************************************************************************************
+
+Explain how the page table is used for translating a virtual address to physical.
+
+Consider a process with a 16 byte virtual memory space.  The size of pages is 4 bytes.
+
+How many pages does the process have? What is the offset size?
+
+Suppose a process issues a virtual address of 12. What is the page number? What is the offset?
+
+Suppose the process page table is as follows. In the above question, what is the physical frame number?
+
+0	50
+1	2
+2	12
+3	4
+
+************************************************************************************************************
+
+Consider the following segment table:
+
+Segment	Base	Limit
+0	100	40
+1	200	50
+2	300	60
+3	400	80
+4	500	210
+5	600	500
+Consider the following virtual addresses issues by the process.  What would be the corresponding physical addresses:
+
+<2,10>
+
+<5,40>
+
+<0,54>
