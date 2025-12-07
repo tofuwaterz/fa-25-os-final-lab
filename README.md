@@ -8,3 +8,5 @@ contributors -
 Luis Salgado - lesalgado@csu.fullerton.edu
 
 Ibrahim -
+
+Simon Kang - simonkang@csu.fullerton.edu
