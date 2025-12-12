@@ -4,10 +4,10 @@
 2. 
 
 
-3. 
+3. In a many-to-one threading model, one thread making a system call will cause all threads to block.
 
 
-4. 
+4. All the threads will be terminated and the process program will be replaced with a new program.
 
 
 5. 
