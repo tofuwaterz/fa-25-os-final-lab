@@ -48,23 +48,25 @@ return 0;
 }
 ************************************************************************************************************
 
-Suppose in a multithreaded process a thread makes a blocking system call. In which threading model(s) will this certainly result in a process blocking?
-
-************************************************************************************************************
-Consider a multi-threaded process with 10 threads. Thread 3 invokes an execlp() system call. Describe what will happen to each of the threads.
+3. Suppose in a multithreaded process a thread makes a blocking system call. In which threading model(s) will this certainly result in a process blocking?
 
 ************************************************************************************************************
 
-Explain the difference between internal and external fragmentation (in regards to the main memory).
+4. Consider a multi-threaded process with 10 threads. Thread 3 invokes an execlp() system call. Describe what will happen to each of the threads.
+
+************************************************************************************************************
+
+5. Explain the difference between internal and external fragmentation (in regards to the main memory).
 
 Consider a fixed-partition memory allocation scheme consisting of 10 partitions with each partition being 400 KB in size.  The first partition is occupied by a 100 KB process. The third is occupied by a 50 KB process. The ninth partition is occupied by a 26 KB process.  The rest of the partitions are free. How many KBs are lost due to internal fragmentation?
 
 ************************************************************************************************************
-What is a page fault?
+
+6. What is a page fault?
 
 ************************************************************************************************************
 
-Explain how the page table is used for translating a virtual address to physical.
+7. Explain how the page table is used for translating a virtual address to physical.
 
 Consider a process with a 16 byte virtual memory space.  The size of pages is 4 bytes.
 
@@ -81,7 +83,7 @@ Suppose the process page table is as follows. In the above question, what is the
 
 ************************************************************************************************************
 
-Consider the following segment table:
+8. Consider the following segment table:
 
 Segment	Base	Limit
 0	100	40
