@@ -13,7 +13,7 @@
 5. The difference between internal and external fragmentation is that internal fragmentation is caused when processes are given more memory than required. Using the example of a fixed-partition memory with 10 partitions and 400 KB for each partition. The first partition with a 100 KB process is wasting 300KB, the third is wasting 250 KB and the ninth is wasting 474 KB for a total of 1024 KB of wasted memory by giving processes more memory than they need. In external fragmentation, memory is wasted by having enough total memory available for a process but not enough contiguous memory. This is caused by processes being moved in and out of memory resulting in memory that is available in between other processes, but cannot be used for bigger processes.
 
 
-6. 
+6. A page fault is when a process tries to access a page number when the data is stored in the disk and the frame is not in the main memory.
 
 
 7. 
