@@ -7,7 +7,7 @@ contributors -
 
 Luis Salgado - lesalgado@csu.fullerton.edu
 
-Ibrahim -
+Ibraheem Muhammad - imuhammad23@csu.fullerton.edu
 
 Simon Kang - simonkang@csu.fullerton.edu
 
