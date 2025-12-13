@@ -1,7 +1,7 @@
 1. 
 
 
-2. 
+2. There are  2 Errors one where a pointer is being stored in the int variable and the second error asks you to intialize id using pthread_t id
 
 
 3. In a many-to-one threading model, one thread making a system call will cause all threads to block.
