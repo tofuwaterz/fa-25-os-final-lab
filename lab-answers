@@ -17,6 +17,9 @@
 
 
 7. 
+<2,10> Base is 300 Limit is 60 we know 300+10 = 310 so an offset of ten is valid
+<5,40> Base is 600 Limit is 500 we know 600+40 = 640 offset of 40 is valid
+<0,54> Base is 100 Limit is 40 we know 100+54 = 154 But offset 54 is out of bounds since it's greater than the limit causing a segmentation fault
 
 
 8. 
